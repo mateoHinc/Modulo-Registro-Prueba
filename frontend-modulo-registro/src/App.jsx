@@ -24,8 +24,8 @@ function App() {
       <div className="mx-auto p-6 max-w-2xl">
         <Routes>
           <Route path="/" element={<TurnoForm />} />
-          <Route path="/" element={<RegistroForm />} />
-          <Route path="/" element={<RegistroFiltro />} />
+          <Route path="/registro" element={<RegistroForm />} />
+          <Route path="/filtrar" element={<RegistroFiltro />} />
         </Routes>
       </div>
     </Router>

@@ -17,6 +17,7 @@ export default function RegistroFiltro() {
     if (id) {
       try {
         const response = await api.post("/registros/filtrar", { turno_id: id });
+        console.log("Respuesta del backend: ", response.data);
         setRegistros(response.data);
       } catch (error) {
         console.error("Error al filtrar registros: ", error);

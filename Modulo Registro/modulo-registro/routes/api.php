@@ -13,3 +13,4 @@ Route::post('/turnos', [TurnoController::class, 'store']);
 Route::get('/registros', [RegistroController::class, 'index']);
 Route::post('/registros', [RegistroController::class, 'store']);
 Route::get('/registros/filtrar', [RegistroController::class, 'filtrar']);
+Route::post('/registros/filtrar', [RegistroController::class, 'filtrar']);

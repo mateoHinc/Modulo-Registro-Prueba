@@ -31,10 +31,12 @@ class RegistroController extends Controller
     {
 
         $request->validate([
-            'turno_id' => "required|exists:turnos,id"
+            'turno_id' => 'required|exists:turnos,id'
         ]);
 
-        $registros = Registro::where('turno_id', $request->turno_id)->with('turno')->get();
+        $turnoId = (int) $request->turno_id;
+
+        $registros = Registro::where('turno_id', $turnoId)->with('turno')->get();
 
         return response()->json($registros);
     }
