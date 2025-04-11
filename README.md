@@ -1,2 +1,85 @@
-# Modulo-Registro-Prueba
- 
+# 🏭 Modulo de Registro de Producción - Prueba Técnica
+
+Este proyecto es una aplicación web fullstack parar registrar y consultar la producción por turno en una línea de fabricación. Permite:
+
+- Registrar turnos de trabajo (mañana, tarde, noche, etc.)
+- Registrar la producción diaria (máquina, fecha, proyecto)
+- Filtrar registros por turno
+- Conexión entre frontend React y backend Laravel
+
+---
+
+## 🚀 Tecnologías utilizadas
+
+- ⚙️ **Backend:** PHP Laravel 12 (modo mínimo)
+- 🎨 **Frontend:** React + Vite + TailwindCSS
+- 🔁 API RESTful con conexión entre ambos
+- 🛠 Base de datos: SQLite
+
+---
+
+## 📥 Clonar el repositorio
+
+```bash
+git clone https://github.com/mateoHinc/Modulo-Registro-Prueba.git
+cd Modulo-Registro-Prueba
+```
+
+![image](https://github.com/user-attachments/assets/22a2bbdd-55e8-420c-b962-dcfff11384cd)
+
+Aparecerán dos proyectos dentro de la carpeta
+
+![image](https://github.com/user-attachments/assets/98c14a20-f776-4e9b-91db-9a519682c8c4)
+
+La carpeta frontend-modulo-registro(frontend) que es la parte visual para el usuario
+
+![image](https://github.com/user-attachments/assets/37e9577c-9f08-4f15-b5b7-02f8355b2d70)
+
+Mientras la carpeta Modulo Registro/modulo-registro(backend) se encarga la parte lógica y guardar en la bases de datos
+
+![image](https://github.com/user-attachments/assets/e26f0fe5-0788-4d29-b2e6-f87e9a4aa59c)
+![image](https://github.com/user-attachments/assets/2b2c3c20-c989-43e8-8df9-f9e12ed18f70)
+
+## 🧩 Preparar el Backend (Laravel)
+1. Ve a la carpeta del backend
+
+```bash
+cd Modulo Registro/modulo-registro
+code .
+```
+
+2. Instala dependencias
+
+```bash
+composer install
+```
+
+3. Crea el archivo .env y configura tu base de datos:
+
+```bash
+cp .env.example .env
+```
+
+4. Genera la clave de la aplicación:
+
+```bash
+php artisan key:generate
+```
+
+5. Crea la base de datos y ejecuta las migraciones:
+
+```bash
+php artisan key:generate
+```
+
+6. (Opcional) Agrega datos de prueba:
+
+```bash
+php artisan db:seed
+```
+
+7. Levanta el servidor:
+
+```bash
+php -S localhost:8000 -t public
+```
