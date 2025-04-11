@@ -83,3 +83,41 @@ php artisan db:seed
 ```bash
 php -S localhost:8000 -t public
 ```
+Finalmente aparecerá la ejecución del backend salió exitosamente
+
+![image](https://github.com/user-attachments/assets/d6ed4a60-f322-40d3-8d86-b8ee47384c1c)
+
+## 🧪 API disponible
+
+| Método | Endpoint                  | Descripción                    |
+|--------|---------------------------|--------------------------------|
+| GET    | `/api/turnos`             | Listar turnos                  |
+| POST   | `/api/turnos`             | Registrar turno                |
+| GET    | `/api/registros`          | Listar registros               |
+| POST   | `/api/registros`          | Registrar producción           |
+| POST   | `/api/registros/filtrar`  | Filtrar por `turno_id`         |
+
+## 🧩 Preparar el Backend (Laravel)
+1. Ve a la carpeta del frontend:
+
+```bash
+cd frontend-modulo-registro
+code .
+```
+
+2. Instala dependencias:
+
+```bash
+npm install
+```
+
+4. Ejecuta el servidor de desarrollo:
+
+```bash
+npm run dev
+```
+
+Abre en navegador:
+📍 http://localhost:5173
+
+![image](https://github.com/user-attachments/assets/170fa1be-01c3-43ee-bdec-73bad5e85ab5)
