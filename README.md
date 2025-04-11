@@ -40,6 +40,8 @@ Mientras la carpeta Modulo Registro/modulo-registro(backend) se encarga la parte
 ![image](https://github.com/user-attachments/assets/e26f0fe5-0788-4d29-b2e6-f87e9a4aa59c)
 ![image](https://github.com/user-attachments/assets/2b2c3c20-c989-43e8-8df9-f9e12ed18f70)
 
+---
+
 ## 🧩 Preparar el Backend (Laravel)
 1. Ve a la carpeta del backend
 
@@ -87,6 +89,8 @@ Finalmente aparecerá la ejecución del backend salió exitosamente
 
 ![image](https://github.com/user-attachments/assets/d6ed4a60-f322-40d3-8d86-b8ee47384c1c)
 
+---
+
 ## 🧪 API disponible
 
 | Método | Endpoint                  | Descripción                    |
@@ -121,3 +125,35 @@ Abre en navegador:
 📍 http://localhost:5173
 
 ![image](https://github.com/user-attachments/assets/170fa1be-01c3-43ee-bdec-73bad5e85ab5)
+
+---
+
+## 🛡 Garantía de Fiabilidad del Módulo
+
+Para asegurar que el módulo de registro de producción sea confiable, robusto y mantenible, se implementaron las siguientes estrategias:
+
+### ✅ Validación de datos
+- Laravel valida todos los campos requeridos en cada endpoint (`Request::validate`).
+- También se realiza validación del lado del cliente con React para brindar feedback inmediato.
+
+### 🧪 Pruebas funcionales
+- Pruebas manuales realizadas desde Postman y el frontend.
+- Preparado para incluir `Feature Tests` en Laravel que validen los flujos críticos del sistema.
+
+### 🔁 Control de errores
+- Manejo de excepciones controlado con respuestas JSON claras.
+- El frontend detecta errores y muestra mensajes útiles para el usuario.
+
+### 🧱 Integridad de la base de datos
+- Uso de migraciones para definir la estructura de las tablas.
+- Relación entre registros y turnos controlada por claves foráneas (`foreign keys`).
+
+### 🌐 API desacoplada
+- Comunicación clara entre frontend y backend mediante una API REST bien definida.
+- Permite escalar o mantener cada parte del sistema de forma independiente.
+
+### 👥 Pruebas con datos reales
+- El sistema fue probado con datos reales de producción simulados.
+- Las respuestas de filtrado y búsqueda han sido verificadas en múltiples escenarios.
+
+---
